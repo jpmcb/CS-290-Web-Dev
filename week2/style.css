@@ -1,0 +1,69 @@
+/* 
+* John McBride
+* CS 290 Winter 2018
+* HTML / CSS Assignment
+* Jan 15th 2018
+*/
+
+.italics{
+	font-weight: normal;
+	font-style: italic;
+}
+
+table {
+	border-style: solid;
+}
+
+th, td {
+	border-style: solid;
+}
+
+tbody tr:nth-of-type(2n+1) {
+	background-color: pink;
+}
+
+tbody tr:nth-of-type(2n) {
+	background-color: skyblue;
+}
+
+.outer-content {
+	margin-top: 20px;
+	width: 75%;
+	float: left;
+	background-color: pink;
+}
+
+.inner-content {
+	margin: auto;
+	width: 75%;
+	background-color: skyblue;
+	text-align: center;
+}
+
+form {
+	clear: both;
+	margin: 50px;
+}
+
+.centered {
+	margin: auto;
+	width: 100%;
+}
+
+#radio_buttons {
+	margin-top: 20px;
+}
+
+.radios {
+	
+}
+
+label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+button {
+	margin: 15px 15px 15px 0px;
+	width: 330px;
+}

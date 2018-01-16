@@ -1,0 +1,173 @@
+<!--
+* John McBride
+* CS 290 Winter 2018 
+* HTML / CSS Assignment 
+* Jan 15th 2018
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>John McBride - HTML / CSS Assignment 2</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!-- 6x6 table with caption, header row, and footer row -->
+		<!-- Colors alternated using CSS :nth-of-type() rule -->
+		<table>
+			<caption>Guitar Legends Face off Battle!!</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Jimi Hendrix</th>
+					<th>Slash</th>
+					<th>Eric Clapton</th>
+					<th>Prince</th>
+					<th>Eddie Van Halen</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="italics">Jimi Hendrix</th>
+					<td>NA</td>
+					<td>Jimi Hendrix</td>
+					<td>A Close Draw</td>
+					<td>Prince</td>
+					<td>Jimi Hendrix</td>
+				</tr>
+
+				<tr>
+					<th class="italics">Slash</th>
+					<td>Jimi Hendrix</td>
+					<td>NA</td>
+					<td>Eric clapton</td>
+					<td>Prince</td>
+					<td>Slash - Victory!</td>
+				</tr>
+
+				<tr>
+					<th class="italics">Eric Clapton</th>
+					<td>A close tie</td>
+					<td>Eric Clapton</td>
+					<td>NA</td>
+					<td>A close tie</td>
+					<td>Eric - Victory!</td>
+				</tr>
+
+				<tr>
+					<th class="italics">Prince</th>
+					<td>Prince</td>
+					<td>Prince</td>
+					<td>Prince</td>
+					<td>NA</td>
+					<td>Prince</td>
+				</tr>
+
+				<tr>
+					<th class="italics">Eddie van Halen</th>
+					<td>Jimi Hendrix</td>
+					<td>Slash</td>
+					<td>Eric clapton</td>
+					<td>Prince</td>
+					<td>NA - Looser</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">Guitar Legends</td>
+					<td colspan="4">Facing off in battle!</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- unordered list with three points -->
+		<h3>My skills</h3>
+		<ul>
+			<li>Python programming</li>
+			<li>Playing guitar</li>
+			<li>Running races</li>
+		</ul>
+
+		<!-- div that takes 75% of screen. Styled using classes and CSS rules -->
+		<div class="outer-content">
+			<div class="inner-content">
+				<p>Here is the inner content</p>
+			</div>
+		</div>
+
+		<!-- Form that uses POST method -->
+		<form method="post" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+			<fieldset>
+			<legend>POST Form</legend>
+			<div>
+				<div class="centered">
+					<label>Text Entry:
+					<input type="text" name="text_input">
+					</label>
+				</div>
+				<div class="centered">
+					<label>Number entry:
+					<input type="number" name="numerical_input">
+					</label>
+				</div>
+				<div class="centered">
+					<label>Password
+					<input type="password" name="password_input">
+					</label>
+				</div>
+			</div>
+			
+			<div id="radio_buttons">
+				<p>Pick a candy:</p>
+				<input class="radios" id="candy_snickers" type="radio" name="candy" value="Snickers">
+				<label for="candy_snickers">Snickers</label>
+				<input class="radios" id="candy_skittles" type="radio" name="candy" value="Skittles">
+				<label for="candy_skittles">Skittles</label>
+				<input class="radios" id="candy_mentos" type="radio" name="candy" value="Mentos">
+				<label for="candy_mentos">Mentos</label>
+			</div>
+
+			<button type="submit">Submit</button>
+			</fieldset>
+		</form>
+
+		<!-- Form that uses GET method -->
+		<form method="get" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+			<fieldset>
+			<legend>GET Form</legend>
+			<div>
+				<div class="centered">
+					<label>Text Entry:
+					<input type="text" name="text_input">
+					</label>
+				</div>
+				<div class="centered">
+					<label>Number entry:
+					<input type="number" name="numerical_input">
+					</label>
+				</div>
+				<div class="centered">
+					<label>Password
+					<input type="password" name="password_input">
+					</label>
+				</div>
+			</div>
+
+			
+			<div id="radio_buttons">
+				<p>Pick a candy:</p>
+				<input class="radios" id="candy_snickers" type="radio" name="candy" value="Snickers">
+				<label for="candy_snickers">Snickers</label>
+				<input class="radios" id="candy_skittles" type="radio" name="candy" value="Skittles">
+				<label for="candy_skittles">Skittles</label>
+				<input class="radios" id="candy_mentos" type="radio" name="candy" value="Mentos">
+				<label for="candy_mentos">Mentos</label>
+			</div>
+
+			<button type="submit">Submit</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
