@@ -1,6 +1,9 @@
 # Macbook stuff
 .DS_Store
 
+# Submitted zip files
+*.zip
+
 # Logs
 logs
 *.log
